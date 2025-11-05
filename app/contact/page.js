@@ -1,11 +1,19 @@
 import styles from './contact.module.css';
 
+//Componentes
+import NavBar from '@/components/navbar';
+import Footer from '@/components/footer';
+import Message from '@/components/message';
+
 //Página de Contato
 export default function ContactPage() {
     return (
-        <div className={styles.container}>
-            <h1 className={styles.title}>Página de Contato</h1>
-            <p>Bem vindo á página de contato</p>
-        </div>
+        <>
+            <NavBar/>
+            <main className={styles.main}>
+                <Message title="Página de Contato" description="Bem vindo á página de Contato"/>
+            </main>
+            <Footer/>
+        </>
     );
 }

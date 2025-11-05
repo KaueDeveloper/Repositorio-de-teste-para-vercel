@@ -1,11 +1,8 @@
-.container {
+.main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 1rem;
-}
-
-.title {
-  color: rgb(11, 190, 226);
+  height: 82vh;
 }

@@ -1,11 +1,25 @@
+//CSS
 import styles from './page.module.css';
+
+//Componentes
+import NavBar from '@/components/navbar';
+import Footer from '@/components/footer';
+import Message from '@/components/message';
+
+//Metadados
+export const metadata = {
+  title: "Página principal"
+}
 
 //Página principal
 export default function IndexPage() {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>Página principal</h1>
-      <p>Bem vindo á página principal</p>
-    </div>
+    <>
+      <NavBar/>
+      <main className={styles.main}>
+        <Message title="Página principal" description="Bem vindo á página principal"/>
+      </main>
+      <Footer/>
+    </>
   );
 }
